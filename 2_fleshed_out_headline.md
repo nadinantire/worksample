@@ -1,5 +1,5 @@
 # Objective
-this course is teaching about writing the instructions which a computer follows to enable it to store knowledge, process knowledge, and communicate knowledge with the outside world. some one who complete this leasons he/she will be able to design html page and css, get basic to javascript and ruby, leaner will be able to push task done to github. 
+this course is teaching about writing the instructions which a computer follows to enable it to store knowledge, process knowledge, and communicate knowledge with the outside world. some one who complete this lessons he/she will be able to design html page and css, get basic to javascript and ruby, leaner will be able to push task done to github. 
 # Introduction
 
 What is HTML?
