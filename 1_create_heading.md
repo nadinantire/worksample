@@ -1,60 +1,25 @@
-# Table of Content
+# Ruby on Rails
+## Table of Content
+1 Guide Assumptions
 
-## Introduction to html
-1. Creating a Simple Page
-1. What Are HTML Tags?
-1. Marking Up Text
-1. Adding Links
-1. Adding Images
-1. Table Markup
-1. Forms
-1. Embedded Media
+2 Introduction to rails
+2.1 rails definition
+2.2 Concepts of Ruby on Rails 
 
-## CSS FOR PRESENTATION
-1. Introducing Cascading Style Sheets
-1. Formatting Text
-1. Colors and Backgrounds
-1. Thinking Inside the Box
-1. Floating and Positioning
-1. CSS Layout with Flexbox and Grid
-1. Responsive Web Design
-1. Transitions, Transforms, and Animation
-1. More CSS Techniques
-1. Modern Web Development Tools
+3 How the Framework Works
+3.1 MVC Architecture
+3.2 Creating a New Rails Project
+3.3 Installing Rails
+3.3.1 Installing Ruby
+3.3.2 Installing SQLite3
+3.3.3 Installing Node.js and Yarn
+3.3.4 Installing Rails
+3.4 Creating the Blog Application
 
-## JAVASCRIPT
-1. Introduction to JavaScript
-1. Using JavaScript
-1. Core
-1. Browser Object Model
-1. Events
-1. Document Object Model
-1. Data 
+4 rails
+4.1 Starting up the Web Server
 
-## Ruby
+# Summary 
+Framework is a tool that can create web applications in a much shorter time than just languages themselves.
 
-1. Introduction to Ruby for Programmers
-1. ruby command-line tools
-1. Ruby Functions
-1. Types and Conversions
-1. Numbers,Strings, and Symbols
-1. Control Flow,Loops,Collections, and Arrays
-
-## Ruby algorithms
-
-1. Available Libraries
-1. Write your First Algorithm
-1. Managing Dependencies
-1. I/O for your Algorithms
-1. Error Handling
-1. Algorithm Checklist
-1. Publish Algorithm
-1. Conclusion and Resources
-
-## Git / Github
-
-1. Introduction
-1. Repo
-1. Branch
-1. Usage
-1. GitHub markup
+There are rules in　Ruby's framework. Rails has rules like "DRY(do not repeat yourself)" and "CoC(Convention over Configuration)".

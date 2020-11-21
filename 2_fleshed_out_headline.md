@@ -1,6 +1,18 @@
-# Objective
-this course is teaching about writing the instructions which a computer follows to enable it to store knowledge, process knowledge, and communicate knowledge with the outside world. some one who complete this lessons he/she will be able to design html page and css, get basic to javascript and ruby, leaner will be able to push task done to github. 
-# Introduction
+# 1 Guide Assumptions
+This guide is designed for beginners who want to get started with a Rails application from scratch. It does not assume that you have any prior experience with Rails.
+
+Rails is a web application framework running on the Ruby programming language. If you have no prior experience with Ruby, you will find a very steep learning curve diving straight into Rails. There are several curated lists of online resources for learning Ruby:
+
+    Official Ruby Programming Language website
+    List of Free Programming Books
+
+Be aware that some resources, while still excellent, cover versions of Ruby as old as 1.6, and commonly 1.8, and will not include some syntax that you will see in day-to-day development with Rails.
+
+# 2 Introduction to rails
+
+Ruby on Rails. . .by now most people have heard the hype about it. It promises more effective code, total object orientation, and true MVC architecture to say the least. As far as my own personal experience, it has been all that and more. The code is beautiful, easy to maintain, and edit. In a recent project I was working on, it took me less than 10 hours to do the application, as compared to at least double that if I was writing in PHP.
+
+I've heard a lot of web developers that know other languages, usually ASP or PHP, that want to learn Ruby on Rails, but just don't know where to get started. From personal experience, I know it is very different from PHP. Personally, I learned Ruby on Rails less than a year ago, and have had few to no problems with it so far. If you haven't already, I highly recommend hopping on board with the up and coming web framework, Ruby on Rails!
 
 What is HTML?
  HTML is the language in which most websites are written. HTML is used to create pages and make them functional.
@@ -9,367 +21,122 @@ What is HTML?
  Ref:Author:Frank Moraes
      https://html.com/#ixzz6dx9OVQnt
 
-# Creating a Simple Page
-<!DOCTYPE html>
-<html> 
-<head> 
-<title>My First Webpage</title>
-<meta charset="UTF-8"> 
-<meta name="description" content="This is my first website. It includes lots of information about my life."> 
-</head> 
-<body> 
-<h1>Welcome to my webpage</h1> 
-<p>Welcome to <em>my</em> brand new website.</p> <p>This site will be my <strong>new</strong> home on the web.</p> 
-<a href="/page2.html">Page2</a> 
-<img src="testpic.jpg" alt="This is a test image" height="42" width="42"> <p>This website will have the following benefits for my business:</p> <ul> <li>Increased traffic </li>
-<li>Global Reach</li>
-  <li>Promotional Opportunities</li> 
-  </ul> <table> <tr> <td>Row 1 - Column 1</td> 
-  <td>Row 1 - Column 2 </td> </tr> 
-  <tr> <td>Row 2 - Column 1</td> <td>Row 2 - Column 2</td> 
-  </tr> </table>
-   </body>
-    </html>
+# 2.1 rails definition
+Rails is a web application development framework written in the Ruby programming language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started. It allows you to write less code while accomplishing more than many other languages and frameworks. Experienced Rails developers also report that it makes web application development more fun.
 
-Tags are used to mark up the start of an HTML element and they are usually enclosed in angle brackets. An example of a tag is: <h1>.
-<tag>
-# Basic Construction of an HTML Page.
-These tags should be placed underneath each other at the top of every HTML page that you create.
-<!DOCTYPE html> — This tag specifies the language you will write on the page. In this case, the language is HTML 5.
-<html> — This tag signals that from here on we are going to write in HTML code.
-<head> — This is where all the metadata for the page goes — stuff mostly meant for search engines and other computer programs.
-<body> — This is where the content of the page goes.
+Rails is opinionated software. It makes the assumption that there is a "best" way to do things, and it's designed to encourage that way - and in some cases to discourage alternatives. If you learn "The Rails Way" you'll probably discover a tremendous increase in productivity. If you persist in bringing old habits from other languages to your Rails development, and trying to use patterns you learned elsewhere, you may have a less happy experience.
 
-## How To Add Links In HTML
-As you may have noticed, the internet is made up of lots of links.
+The Rails philosophy includes two major guiding principles:
 
-Almost everything you click on while surfing the web is a link takes you to another page within the website you are visiting or to an external site.
+    Don't Repeat Yourself: DRY is a principle of software development which states that "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system." By not writing the same information over and over again, our code is more maintainable, more extensible, and less buggy.
+    Convention Over Configuration: Rails has opinions about the best way to do many things in a web application, and defaults to this set of conventions, rather than require that you specify minutiae through endless configuration files.
 
-Links are included in an attribute opened by the <a> tag. This element is the first that we’ve met which uses an attribute and so it looks different to previously mentioned tags.
+# 2.2 Concepts of Ruby on Rails 
+Ruby on Rails follows several principles to help keep it's code sleek and clean. You should try to live by these principles while you're working with RoR to get the most of it. For one, it follows the Agile programming term of DRY (Don't repeat yourself). Obviously, this means that you only write your code once in a certain consistent place. For example, if you need the code to do a certain thing, then you'll put it in a certain place every time.
 
-The Anchor Tag
-The <a> (or anchor) opening tag is written in the format:
+The second concept that RoR follows is CoC (Conventions over Configuration).This pretty much means that ruby assumes a lot, and explains most of the automatic defaults you'll see ruby generate for us. Instead of you always having to configure everything, in every single project, ruby does it for you automatically.Then, if you want to do something that's unconventional, you simply override the sensible defaults that RoR already has in place.This generally leads to less code having to be written.
 
-<a href="https://blogging.com/how-to-start-a-blog/">Your Link Text Here </a>
+Advantages of Learning Ruby on Rails:
 
-## Adding Images
+    It is pretty easy to learn compared to other languages
+    Completely Object Orientated
+    MVC Architecture
+    You don't have to write as much code
+    Very extendible
+    Open Source
+    The community is extremely helpful in answering questions
+    Despite being a relatively new framework, it is pretty fully featured, and has very few bugs.
 
-In today’s modern digital world, images are everything. The <img> tag has everything you need to display images on your site. Much like the <a> anchor element, <img> also contains an attribute.
+# 3 How the Framework Works
+## 3.1 MVC Architecture
+MVC Architecture
 
-Eg: <img src="testpic.jpg" alt="This is a test image" height="42" width="42">
+Rails runs off of MVC Architecture. Basically that means we break up our code into three sections; the model, the view, and the controller. If you'd like to learn more about MVC Architecture be sure to visit the Nettuts MVC introduction tutorial.
 
-## Table Markup
+## 3.2 Creating a New Rails Project
+The best way to read this guide is to follow it step by step. All steps are essential to run this example application and no additional code or steps are needed.
 
-<table> 
-<tr> 
-<td>Row 1 - Column 1</td> 
-<td>Row 1 - Column 2 </td> 
-</tr> <tr> <td>Row 2 - Column 1</td> 
-<td>Row 2 - Column 2</td> </tr> 
-</table>
+By following along with this guide, you'll create a Rails project called blog, a (very) simple weblog. Before you can start building the application, you need to make sure that you have Rails itself installed.
 
-## Forms
+The examples below use $ to represent your terminal prompt in a UNIX-like OS, though it may have been customized to appear differently. If you are using Windows, your prompt will look something like c:\source_code>
 
-An HTML form is used to collect user input. The user input is most often sent to a server for processing
+## 3.3 Installing Rails
 
-<form>
-form elements
-</form>
+Before you install Rails, you should check to make sure that your system has the proper prerequisites installed. These include:
 
-## Embed
+    Ruby
+    SQLite3
+    Node.js
+    Yarn
 
-The <embed> tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application. Browser Support. Element. Attributes. Attribute. Global Attributes. The <embed> tag also supports the Global Attributes in HTML.
+3.1.1 Installing Ruby
 
-<embed type="image/jpg" src="pic_trulli.jpg" width="300" height="200">
+Open up a command line prompt. On macOS open Terminal.app, on Windows choose "Run" from your Start menu and type 'cmd.exe'. Any commands prefaced with a dollar sign $ should be run in the command line. Verify that you have a current version of Ruby installed:
 
-With the use of the img tag and CSS, you can do just about anything you want.
+$ ruby -v
+ruby 2.5.0
+Rails requires Ruby version 2.5.0 or later. If the version number returned is less than that number, you'll need to install a fresh copy of Ruby.
 
+To quickly install Ruby and Ruby on Rails on your system in Windows, you can use Rails Installer. For more installation methods for most Operating Systems take a look at ruby-lang.org
 
--------------------------## CSS FOR PRESENTATION----------------------------
+If you are working on Windows, you should also install the Ruby Installer Development Kit.
 
-## Introducing Cascading Style Sheets
+### 3.3.2 Installing SQLite3
+You will also need an installation of the SQLite3 database. Many popular UNIX-like OSes ship with an acceptable version of SQLite3. On Windows, if you installed Rails through Rails Installer, you already have SQLite installed. Others can find installation instructions at the SQLite3 website. Verify that it is correctly installed and in your PATH:
 
-Cascading Style Sheets, allow you to design and ornament your web pages.
-## text formatting
+$ sqlite3 --version
+The program should report its version.
+### 3.3.3 Installing Node.js and Yarn
+Finally, you'll need Node.js and Yarn installed to manage your application's JavaScript.
 
-This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
+Find the installation instructions at the Node.js website and verify it's installed correctly with the following command:
 
-body {
-  background-color: lightgrey;
-  color: blue;
-}
+$ node --version
+The version of your Node.js runtime should be printed out. Make sure it's greater than 8.16.0.
 
-h1 {
-  background-color: black;
-  color: white;
-}
+To install Yarn, follow the installation instructions at the Yarn website.
 
-## Colors and Backgrounds
+Running this command should print out Yarn version:
+yarn -v
+If it says something like "1.22.0", Yarn has been installed correctly.
 
-The background-color property sets the background color of an element. The background of an element is the total size of the element, including padding and border (but not the margin).
-Eg: body {background-color: coral;}
+### 3.3.4 Installing Rails
+To install Rails, use the gem install command provided by RubyGems:
+gem install rails
 
-## Thinking Inside the Box
+To verify that you have everything installed correctly, you should be able to run the following:
+$ rails --version
+If it says something like "Rails 6.0.0", you are ready to continue.
 
- It is achieved by overriding box-sizing with a value of padding-box. Overwriting box-sizing default value with padding-box will “invert” padding, moving it to the inner box of the element. The padding was “inverted” and now you're thinking inside the box!
+### 3.4 Creating the Blog Application
 
-## Floating and Positioning
+Rails comes with a number of scripts called generators that are designed to make your development life easier by creating everything that's necessary to start working on a particular task. One of these is the new application generator, which will provide you with the foundation of a fresh Rails application so that you don't have to write it yourself.
 
- The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning).
+To use this generator, open a terminal, navigate to a directory where you have rights to create files, and type:
 
- There are five different position values:
+$ rails new blog
 
- 1. static 
- 1. relative
- 1. fixed
- 1. absolute
- 1. sticky
+This will create a Rails application called Blog in a blog directory and install the gem dependencies that are already mentioned in Gemfile using bundle install.
 
- ## Grid and flexbox
-  The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.
+If you're using Windows Subsystem for Linux then there are currently some limitations on file system notifications that mean you should disable the spring and listen gems which you can do by running rails new blog --skip-spring --skip-listen.
 
-## Responsive Web Design
+You can see all of the command line options that the Rails application builder accepts by running rails new -h.
 
-Responsive web design is about creating web pages that look good on all devices!
-A responsive web design will automatically adjust for different screen sizes and viewports.
-Eg: <meta name="viewport" content="width=device-width, initial-scale=1.0">
+After you create the blog application, switch to its folder:
+cd blog
 
-## Transitions, Transforms, and Animation
+The blog directory has a number of auto-generated files and folders that make up the structure of a Rails application.
 
-Transforms allow us to move or change the appearance of an element on a 2D plane. We will want to use transforms with transitions in order to produce a smooth animation. They are triggered when an element changes state, such as on a hover.
+# 4 Rails
 
-## More CSS Techniques
-Most designers and web developers only scratch the surface of the potent language that is CSS. In terms of programming languages, CSS has a fairly simple learning curve. That doesn't mean that CSS isn't a powerful language.
+To begin with, let's get some text up on screen quickly. To do this, you need to get your Rails application server running.
 
-$alternate1 = array(
-'bgmast' => 'ddb',
-'fgmast' => '000',
-'bgmenu' => 'aa7',
-'fgmenu' => 'fff',
-'bgcont' => 'fff',
-'fgcont' => '333'
-);
+## 4.1 Starting up the Web Server
+You actually have a functional Rails application already. To see it, you need to start a web server on your development machine. You can do this by running the following in the blog directory:
 
-## Modern Web Development Tools
+$ rails server
+If you are using Windows, you have to pass the scripts under the bin folder directly to the Ruby interpreter e.g. ruby bin\rails server.
 
-1. Creative Tim provides Bootstrap based design elements, which help you faster your development work. You can create web and mobile apps using this tool.
-Envato HTML Templates
-1. Envato has a collection of 1000+ readymade HTML5 templates that save you coding time. These templates offer power customization tools and are SEO ready. They offer optimized CSS and JS that improve Page Speed scores.
+JavaScript asset compression requires you have a JavaScript runtime available on your system, in the absence of a runtime you will see an execjs error during asset compilation. Usually macOS and Windows come with a JavaScript runtime installed. therubyrhino is the recommended runtime for JRuby users and is added by default to the Gemfile in apps generated under JRuby. You can investigate all the supported runtimes at ExecJS.
 
-------------------------## JAVASCRIPT------------------------------
-
-
-## Introduction to JavaScript
-
-JavaScript was initially created to “make web pages alive”.The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run.In this aspect, JavaScript is very different from another language called Java.
-
-## Using JavaScript
-
-The HTML <script> Tag
-The HTML <script> tag is used to define a client-side script (JavaScript).The <script> element either contains script statements, or it points to an external script file through the src attribute. Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content. To select an HTML element, JavaScript most often uses the document.getElementById() method.This JavaScript example writes "Hello JavaScript!" into an HTML element with id="demo":
-
-<script>
-document.getElementById("demo").innerHTML = "Hello JavaScript!";
-</script>
-
-## Core
-
-1. Asynchronous Communication
-2. Dom creation and modification
-3. Loops, Loops, Loops, Loops
-4. Dev Tool Debugging
-5. Scope
-6. Functions and Function Calls
-7. Conditional statements
-8. Events and Event Handling
-9. Reference versus Value variables and Data Types
-10. Traversing the DOM – Why Javascript?
-
-## Browser Object Model
-
-The Browser Object Model (BOM) is the core of JavaScript on the web. The BOM provides you with objects that expose the web browser’s functionality.
-
-## Events
-
-HTML events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can "react" on these events.
-
-<element event='some JavaScript'>
-<!DOCTYPE html>
-<html>
-<body>
-
-<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
-
-<p id="demo"></p>
-
-</body>
-</html>
-
-## Document Object Model
-
-The Document object has various properties that refer to other objects which allow access to and modification of document content. ... The way a document content is accessed and modified is called the Document Object Model, or DOM. The Objects are organized in a hierarchy.
-
-What is the DOM?
-The DOM is a W3C (World Wide Web Consortium) standard.
-The DOM defines a standard for accessing documents: "The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
-
-The W3C DOM standard is separated into 3 different parts:
-Core DOM - standard model for all document types
-XML DOM - standard model for XML documents
-HTML DOM - standard model for HTML documents
-
-The DOM represents an HTML or XML document as a hierarchy of nodes. Consider the following HTML.
-
-<html>
-    <head>
-        <title>JavaScript DOM</title>
-    </head>
-    <body>
-        <p>Hello DOM!</p>
-    </body>
-</html>
-
-## Data
-
- There are six basic data types in JavaScript which can be divided into three main categories: primitive (or primary), composite (or reference), and special data types. String, Number, and Boolean are primitive data types. Object, Array, and Function (which are all types of objects) are composite data types.
- Eg:
-
- var a = 'Hi there!';  // using single quotes
- var b = "Hi there!";  // using double quotes
-
- var car = {
-    modal: "BMW X3",
-    color: "white",
-    doors: 5
- }
-
- ------------------------------## Ruby---------------------------------
-
- ## Introduction
- This is a small Ruby tutorial that should take no more than 20 minutes to complete. It makes the assumption that you already have Ruby installed. (If you do not have Ruby on your computer install it before you get started.)
-
- Interactive Ruby
- Ruby comes with a program that will show the results of any Ruby statements you feed it. Playing with Ruby code in interactive sessions like this is a terrific way to learn the language.
-
- Open up IRB (which stands for Interactive Ruby).
-
- If you’re using macOS open up Terminal and type irb, then hit enter.
- If you’re using Linux, open up a shell and type irb and hit enter.
- If you’re using Windows, open Interactive Ruby from the Ruby section of your Start Menu.
- irb(main):001:0>
- Ok, so it’s open. Now what?
-
- Type this: "Hello World"
-
- irb(main):001:0> "Hello World"
- => "Hello World"
- Ruby Obeyed You!
- What just happened? Did we just write the world’s shortest “Hello World” program? Not exactly. The second line is just IRB’s way of telling us the result of the last expression it evaluated. If we want to print out “Hello World” we need a bit more:
-
- irb(main):002:0> puts "Hello World"
- Hello World
- => nil
- puts is the basic command to print something out in Ruby. But then what’s the => nil bit? That’s the result of the expression. puts always returns nil, which is Ruby’s absolutely-positively-nothing value.
-
- Your Free Calculator is Here
- Already, we have enough to use IRB as a basic calculator:
-
- irb(main):003:0> 3+2
- => 5
- Three plus two. Easy enough. What about three times two? You could type it in, it’s short enough, but you may also be able to go up and change what you just entered. Try hitting the up-arrow on your keyboard and see if it brings up the line with 3+2 on it. If it does, you can use the left arrow key to move just after the + sign and then use backspace to change it to a * sign.
-
- irb(main):004:0> 3*2
- => 6
- Next, let’s try three squared:
-
- irb(main):005:0> 3**2
- => 9
- In Ruby ** is the way you say “to the power of”. But what if you want to go the other way and find the square root of something?
-
- irb(main):006:0> Math.sqrt(9)
- => 3.0
- Ok, wait, what was that last one? If you guessed, “it was figuring out the square root of nine,” you’re right. But let’s take a closer look at things. First of all, what’s Math?
-
-Modules Group Code by Topic
-Math is a built-in module for mathematics. Modules serve two roles in Ruby. This shows one role: grouping similar methods together under a familiar name. Math also contains methods like sin() and tan().
-
-Next is a dot. What does the dot do? The dot is how you identify the receiver of a message. What’s the message? In this case it’s sqrt(9), which means call the method sqrt, shorthand for “square root” with the parameter of 9.
-
-The result of this method call is the value 3.0. You might notice it’s not just 3. That’s because most of the time the square root of a number won’t be an integer, so the method always returns a floating-point number.
-
-What if we want to remember the result of some of this math? Assign the result to a variable.
-
-irb(main):007:0> a = 3 ** 2
-=> 9
-irb(main):008:0> b = 4 ** 2
-=> 16
-irb(main):009:0> Math.sqrt(a+b)
-=> 5.0
- As great as this is for a calculator, we’re getting away from the traditional Hello World message that beginning tutorials are supposed to focus on… so let’s  go back to that.
-Ref:https://www.ruby-lang.org/en/documentation/quickstart/
-date: 16 November, 2020
-
-----------------------------## Ruby algorithms------------------------------
-## Ruby algorithms
-Introduction
-The basic idea of a data structure is to store data in a way that meets the needs of your particular application. You might be inclined to store a particular kind of data in one giant array, but it would be rather time consuming to locate a specific value if you had a significant number and depth of items. So you need to look to other options.
-
-You’ve already had a brief introduction to algorithms over some of the other lessons and you even got to write your own Merge Sort algorithm in the last project. You’ll find that sorting algorithms are quite common. Another major area for algorithms is in search, where milliseconds count. When you’re searching through enormous troves of data, the quality of your search algorithm is incredibly important. Traversing a data tree looking for a particular element is a related problem that’s common in data intensive applications.
-
-Depending on the application, there are a batch of other basic data structures available to help you out. The differences between them typically have to do with trade-offs between how long it takes to first populate the structure, how long it takes to add or find elements, and how large the structure is in memory.
-
-We’ll save the specifics of data structures for more computer-science-oriented courses, but this introduction should again expand your toolbox slightly so you can identify and solve certain problems where plain old Arrays, Hashes and Sets don’t quite cut it. New structures and strategies will be particularly relevant, for instance, when you’re trying to search through a large batch of data for a particular value or plan out a strategy several moves in advance.
-
-
-
----------------------- ## Git/Github ----------------------------------
-
-
-## Git / Github
-Resources: 
-According to the latest Stack Overflow developer survey, more than 70 percent of developers use Git, making it the most-used VCS in the world. Git is commonly used for both open source and commercial software development, with significant benefits for individuals, teams and businesses.
-
-Install git and create a GitHub account 
-The first two things you'll want to do are install git and create a free GitHub account.
-
-Follow the instructions here to install git (if it's not already installed). Note that for this tutorial we will be using git on the command line only. While there are some great git GUIs (graphical user interfaces), I think it's easier to learn git using git-specific commands first and then to try out a git GUI once you're more comfortable with the command. 
-
-Once you've done that, create a GitHub account here.  (Accounts are free for public repositories, but there's a charge for private repositories.)
-
- 1. Create a local git repository
- 2. Add a new file to the repo
- 3. Add a file to the staging environment
- 4. Create a commit
- 5. Create a new branch
- 6. Create a new repository on GitHub
- 7. Push a branch to GitHub
- 8. Create a Pull Request (PR)
- 9. Merge a PR
- 10. Bask in your git glory
-
- Git command:
-or create a new repository on the command line
-echo "# TvetSchool" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/nadinantire/TvetSchool.git
-git push -u origin main
-                
-…or push an existing repository from the command line
-git remote add origin https://github.com/nadinantire/TvetSchool.git
-git branch -M main
-git push -u origin main
-
-## Summary
-
-design responsive html page with css.
-write script code to html page.
-get basic to ruby.
-create branches , add  new contentto existing repo and push task done to github account. 
-
-
-
-
-
+This will fire up Puma, a web server distributed with Rails by default. To see your application in action, open a browser window and navigate to http://localhost:3000. You should see the Rails default information page:
